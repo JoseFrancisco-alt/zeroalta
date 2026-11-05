@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Barbearia Zeroalta · Porto, Espinho e Lourosa</title>
+  <meta name="description" content="Barbearia Zeroalta: corte, degradê, barba e bigode na Boavista (Porto), em Espinho e em Lourosa. Marque online na barbearia mais perto de si.">
+  <meta name="theme-color" content="#111111">
+  <link rel="icon" href="img/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,800;0,9..144,900;1,9..144,700;1,9..144,900&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.13/dist/lenis.css">
+  <link rel="stylesheet" href="style.css?v=1">
+</head>
+<body>
+  <div class="loader" id="loader" aria-hidden="true">
+    <img src="img/logo.png" alt="">
+    <div class="loader-word"><span>ZEROALTA</span><span class="loader-fill" id="loaderFill">ZEROALTA</span></div>
+    <div class="loader-razor"><i id="loaderRazor"></i></div>
+    <p class="loader-num"><b id="loaderNum">0</b>%</p>
+  </div>
+  <div class="cursor" id="cursor" aria-hidden="true"><span id="cursorLabel"></span></div>
+  <div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+  <div class="bg-base" id="bgBase" aria-hidden="true"></div>
+  <div class="bg-wipe" id="bgWipe" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- NAV -->
+  <header class="nav" id="nav">
+    <a href="#topo" class="brand" aria-label="Barbearia Zeroalta — início"><img src="img/logo.png" alt=""><span>Zero<i>alta</i></span></a>
+    <nav class="links" id="links">
+      <a href="#servicos">Serviços</a>
+      <a href="#avaliacoes">Avaliações</a>
+      <a href="#unidades">Barbearias</a>
+    </nav>
+    <a href="agendar.html" class="btn btn-sun" data-magnetic>Marcar</a>
+    <button class="burger" id="burger" aria-label="Abrir menu" aria-expanded="false"><span></span><span></span></button>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero2" id="topo" data-theme="sun">
+    <img class="hero-logo" src="img/logo.png" alt="" aria-hidden="true">
+    <div class="h2-center">
+      <p class="tag">Porto · Espinho · Lourosa</p>
+      <h1 class="h2-title">Você aqui, <em>você em alta.</em></h1>
+      <p class="h2-sub" data-blur>Corte, degradê, barba e bigode com barbeiros que tratam cada cliente pelo nome. Três barbearias, uma marcação só.</p>
+      <div class="hero-ctas">
+        <a href="agendar.html" class="btn btn-sun" data-magnetic>Marcar agora</a>
+        <a href="#unidades" class="btn btn-line">Ver barbearias</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOTO QUE CRESCE ATÉ OCUPAR A TELA -->
+  <section class="grow" id="grow" data-theme="sun" aria-label="Uma pausa no dia">
+    <div class="grow-pin">
+      <p class="grow-note">Entre, sente-se e desligue: aqui o tempo é seu.</p>
+      <h2 class="grow-title">Uma pausa<br><em>no seu dia.</em></h2>
+      <div class="grow-card" id="growCard"><img src="img/barbearia.jpg" alt="Barbeiro a aparar a barba de um cliente com navalha"><span class="sticker">Você<br>em alta</span></div>
+    </div>
+  </section>
+
+  <!-- FAIXA -->
+  <div class="strip" aria-label="Corte, barba, bigode">
+    <div class="strip-track">
+      <span>Corte</span><b>✂</b><span>Degradê</span><b>✂</b><span>Barba</span><b>✂</b><span>Bigode</span><b>✂</b>
+      <span>Corte</span><b>✂</b><span>Degradê</span><b>✂</b><span>Barba</span><b>✂</b><span>Bigode</span><b>✂</b>
+      <span>Corte</span><b>✂</b><span>Degradê</span><b>✂</b><span>Barba</span><b>✂</b><span>Bigode</span><b>✂</b>
+    </div>
+  </div>
+
+  <!-- MANIFESTO -->
+  <section class="manifesto" data-theme="earth">
+    <p class="kicker">Porquê a Zeroalta</p>
+    <p class="mf" data-blur>Bom corte, <em>bom ambiente</em> e conversa boa. Há clientes que vêm cá há anos e <em>não trocam</em> por nada.</p>
+    <ul class="pills">
+      <li>Corte personalizado</li><li>Degradê</li><li>Barba à navalha</li><li>Bigode</li><li>Todas as idades</li>
+    </ul>
+    <div class="nums">
+      <div><b data-count="3">0</b><span>barbearias<br>Porto, Espinho, Lourosa</span></div>
+      <div><b data-count="6">0</b><span>dias por semana<br>de segunda a sábado</span></div>
+      <div><b data-count="13" data-suffix="€">0</b><span>o corte com degradê,<br>desde</span></div>
+      <div><b data-count="5" data-suffix="★">0</b><span>estrelas<br>nas avaliações</span></div>
+    </div>
+  </section>
+
+  <!-- SERVIÇOS -->
+  <section class="servicos" id="servicos" data-theme="cream">
+    <div class="sec-head">
+      <p class="kicker">Serviços</p>
+      <h2 class="title">O que <em>fazemos</em></h2>
+    </div>
+    <div class="cards">
+      <article class="card txt" data-cursor="Marcar"><span class="n">01</span><h3>Corte</h3><p>Clássico ou moderno, feito à medida do seu rosto.</p><p class="preco">desde 13€ <small>· 20 min</small></p></article>
+      <article class="card txt" data-cursor="Marcar"><span class="n">02</span><h3>Corte com degradê</h3><p>Degradê limpo, do baixo ao alto, com acabamento ao pormenor.</p><p class="preco">desde 13€ <small>· 30 min</small></p></article>
+      <article class="card txt" data-cursor="Marcar"><span class="n">03</span><h3>Barba</h3><p>Desenho, toalha quente e acabamento à navalha.</p><p class="preco">— € <small>· 30 min</small></p></article>
+      <article class="card txt" data-cursor="Marcar"><span class="n">04</span><h3>Corte &amp; barba</h3><p>O pacote completo para sair daqui em alta.</p><p class="preco">— € <small>· 50 min</small></p></article>
+      <article class="card txt" data-cursor="Marcar"><span class="n">05</span><h3>Bigode</h3><p>Aparar, desenhar e manter o bigode no lugar.</p><p class="preco">— € <small>· 15 min</small></p></article>
+      <article class="card txt" data-cursor="Marcar"><span class="n">06</span><h3>Corte júnior</h3><p>Para os mais novos, com a mesma atenção.</p><p class="preco">— € <small>· 20 min</small></p></article>
+    </div>
+    <p class="note">Preços de exemplo · a confirmar com a Zeroalta</p>
+  </section>
+
+  <!-- AVALIAÇÕES -->
+  <section class="galeria" id="avaliacoes" data-theme="sun">
+    <div class="sec-head">
+      <p class="kicker">Avaliações no Google</p>
+      <h2 class="title">Quem vem, <em>volta.</em></h2>
+    </div>
+    <div class="rev-slider">
+    <div class="reviews" id="revStrip" data-cursor="Arraste">
+      <figure class="rev"><span class="stars">★★★★★</span><blockquote>"Após quase 5 anos continuo a não trocar por nada esta barbearia."</blockquote><figcaption>Rodolfo S.</figcaption></figure>
+      <figure class="rev"><span class="stars">★★★★★</span><blockquote>"O Thiago faz de forma extraordinária e vai ao pormenor dos pormenores."</blockquote><figcaption>Miguel S.</figcaption></figure>
+      <figure class="rev"><span class="stars">★★★★★</span><blockquote>"Barbearia lindíssima com clima agradável, pronto para qualquer tipo de idades."</blockquote><figcaption>Luiz M.</figcaption></figure>
+      <figure class="rev"><span class="stars">★★★★★</span><blockquote>"Excelente atendimento prestado aos clientes! Profissionais de altíssimo nível!"</blockquote><figcaption>Maicon S.</figcaption></figure>
+      <figure class="rev"><span class="stars">★★★★★</span><blockquote>"Um bom corte de cabelo, em pouco tempo e com um preço barato."</blockquote><figcaption>Gonçalo P.</figcaption></figure>
+      <figure class="rev"><span class="stars">★★★★★</span><blockquote>"O atendimento é excelente, o corte top, e a conversa é só resenha."</blockquote><figcaption>Tulio C.</figcaption></figure>
+    </div>
+      <button class="rev-arrow prev" id="revPrev" type="button" aria-label="Avaliação anterior"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
+      <button class="rev-arrow next" id="revNext" type="button" aria-label="Próxima avaliação"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
+    </div>
+    <a href="https://www.instagram.com/barbeariazeroalta.pt/" class="btn btn-sun" target="_blank" rel="noopener">Ver no Instagram ↗</a>
+  </section>
+
+  <!-- UNIDADES -->
+  <section class="visite" id="unidades" data-theme="cream">
+    <div class="vs-text">
+      <p class="kicker">As nossas barbearias</p>
+      <h2 class="title">Escolha a <em>mais perto.</em></h2>
+      <div class="lojas">
+        <article class="loja"><h3>Boavista · Porto</h3><p>Avenida da Boavista, 1361, Loja 12</p><div class="vs-ctas"><a href="agendar.html?loja=boavista" class="btn btn-dark">Marcar</a><a href="https://www.google.com/maps/search/?api=1&query=Barbearia%20Zeroalta%20Avenida%20da%20Boavista%201361%20Porto" class="btn btn-line" target="_blank" rel="noopener">Como chegar ↗</a></div></article>
+        <article class="loja"><h3>Espinho</h3><p>Rua 32, n.º 576</p><div class="vs-ctas"><a href="agendar.html?loja=espinho" class="btn btn-dark">Marcar</a><a href="https://www.google.com/maps/search/?api=1&query=Barbearia%20Zeroalta%20Rua%2032%20576%20Espinho" class="btn btn-line" target="_blank" rel="noopener">Como chegar ↗</a></div></article>
+        <article class="loja"><h3>Lourosa</h3><p>Avenida Principal, 601</p><div class="vs-ctas"><a href="agendar.html?loja=lourosa" class="btn btn-dark">Marcar</a><a href="https://www.google.com/maps/search/?api=1&query=Barbearia%20Zeroalta%20Avenida%20Principal%20601%20Lourosa" class="btn btn-line" target="_blank" rel="noopener">Como chegar ↗</a></div></article>
+      </div>
+      <dl>
+        <div><dt>Horário</dt><dd>Segunda a sexta · 9h30–19h30<br>Sábado · 9h–18h · Domingo fechado</dd></div>
+        <div><dt>Telefone</dt><dd>+351 936 580 038</dd></div>
+      </dl>
+    </div>
+    <div class="vs-map"><iframe title="Mapa da Barbearia Zeroalta na Boavista" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=Avenida%20da%20Boavista%201361%2C%20Porto&z=15&output=embed"></iframe></div>
+  </section>
+
+  <footer class="footer">
+    <div class="pride-bar" aria-hidden="true"></div>
+    <p class="ft-big" id="ftBig" aria-hidden="true">ZEROALTA</p>
+    <div class="ft">
+      <a href="#topo" class="brand big"><img src="img/logo.png" alt=""><span>Zero<i>alta</i></span></a>
+      <div class="ft-links">
+        <a href="https://www.instagram.com/barbeariazeroalta.pt/" target="_blank" rel="noopener">Instagram @barbeariazeroalta.pt</a>
+        <a href="#" class="js-wa">WhatsApp</a>
+        <span>Porto · Espinho · Lourosa</span>
+      </div>
+    </div>
+  </footer>
+
+  <a href="agendar.html" class="wa-float" aria-label="Marcar horário">Marcar</a>
+
+  <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script src="script.js?v=1"></script>
+</body>
+</html>
